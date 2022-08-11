@@ -15,12 +15,6 @@ filtrar por rango de precios; sumar productos al carrito o vaciar carrito.</p>
 <p>👉🏻Lista de productos: muestra los productos y los filtros</p>
 <p>👉🏻Detalle de productos: se ven las imagenes y la descripcion de los productos de la tienda</p>
 <p>👉🏻Nosotros: aparece una imagen de error 404</p>
-
-
-  
  
-  Si queres verlo y probarlo: https://jade-capybara-62394f.netlify.app
   
-  
-  
-  Gracias por visitar mi perfil ❤
+<p>Gracias por visitar mi perfil ❤</p>
