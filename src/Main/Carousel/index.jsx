@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 import {
   Box,
@@ -7,12 +7,12 @@ import {
   Stack,
   Heading,
   Text,
-  Container
-} from '@chakra-ui/react'
+  Container,
+} from "@chakra-ui/react";
 // Here we have used react-icons package for the icons
-import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi'
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 // And react-slick as our Carousel Lib
-import Slider from 'react-slick'
+import Slider from "react-slick";
 
 // Settings for the slider
 const settings = {
@@ -24,48 +24,48 @@ const settings = {
   speed: 500,
   autoplaySpeed: 5000,
   slidesToShow: 1,
-  slidesToScroll: 1
-}
+  slidesToScroll: 1,
+};
 
-export default function Carousel () {
+export default function Carousel() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
-  const [slider, setSlider] = useState(null)
+  const [slider, setSlider] = useState(null);
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '50%' })
-  const side = useBreakpointValue({ base: '30%', md: '40px' })
+  const top = useBreakpointValue({ base: "90%", md: "50%" });
+  const side = useBreakpointValue({ base: "30%", md: "40px" });
 
   // This list contains all the data for carousels
   // This can be static or loaded from a server
   const cards = [
     {
-      title: 'Design Projects 1',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      title: "Bienvenid@s a ADA Shop",
+      text: "La tienda online con variedad de productos para tu hogar",
       image:
-        'https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60'
+        "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
     },
     {
-      title: 'Design Projects 2',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      title: "Productos en oferta",
+      text: "Semana de ofertas para decorar cualquier rincón de tu hogar",
       image:
-        'https://images.unsplash.com/photo-1438183972690-6d4658e3290e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2274&q=80'
+        "https://images.unsplash.com/photo-1616046330109-09ee9e34be48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
     },
     {
-      title: 'Design Projects 3',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      title: "ADA Shop",
+      text: "Encontrá los productos que buscas en un solo lugar",
       image:
-        'https://images.unsplash.com/photo-1507237998874-b4d52d1dd655?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60'
-    }
-  ]
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+    },
+  ];
 
   return (
     <Box
-      position={'relative'}
-      height={'400px'}
-      width={'full'}
-      overflow={'hidden'}
+      position={"relative"}
+      height={"670px"}
+      width={"full"}
+      overflow={"hidden"}
     >
       {/* CSS files for react-slick */}
       <link
@@ -86,7 +86,7 @@ export default function Carousel () {
         position="absolute"
         left={side}
         top={top}
-        transform={'translate(0%, -50%)'}
+        transform={"translate(0%, -50%)"}
         zIndex={2}
         onClick={() => slider?.slickPrev()}
       >
@@ -99,7 +99,7 @@ export default function Carousel () {
         position="absolute"
         right={side}
         top={top}
-        transform={'translate(0%, -50%)'}
+        transform={"translate(0%, -50%)"}
         zIndex={2}
         onClick={() => slider?.slickNext()}
       >
@@ -110,7 +110,7 @@ export default function Carousel () {
         {cards.map((card, index) => (
           <Box
             key={index}
-            height={'6xl'}
+            height={"6xl"}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
@@ -121,16 +121,25 @@ export default function Carousel () {
             <Container size="container.lg" height="600px" position="relative">
               <Stack
                 spacing={6}
-                w={'full'}
-                maxW={'lg'}
+                w={"full"}
+                maxW={"lg"}
                 position="absolute"
                 top="50%"
                 transform="translate(0, -50%)"
               >
-                <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+                <Heading
+                  fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+                  textAlign={"center"}
+                >
                   {card.title}
                 </Heading>
-                <Text fontSize={{ base: 'md', lg: 'lg' }} color="GrayText">
+                <Text
+                  fontSize={{ base: "md", lg: "lg" }}
+                  color="black"
+                  fontWeight={"bold"}
+                  p={"2"}
+                  textAlign={"center"}
+                >
                   {card.text}
                 </Text>
               </Stack>
@@ -139,5 +148,5 @@ export default function Carousel () {
         ))}
       </Slider>
     </Box>
-  )
+  );
 }
