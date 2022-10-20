@@ -18,3 +18,5 @@ filtrar por rango de precios; sumar productos al carrito o vaciar carrito.</p>
  
   
 <p>Gracias por visitar mi perfil ❤</p>
+
+Podes visualizar la página haciendo click en el siguiente enlace: https://jade-capybara-62394f.netlify.app/
