@@ -3,7 +3,7 @@
 <p> <img src="https://media.giphy.com/media/oZVVwfqdW1r75Ts94C/giphy.gif"> </p>
 
 <p> El proyecto Ada Shop se desarrolló en React.Js utilizando la libreria de estilos Chakra ui, React Router Dom para el sistema de rutas, 
-Formik para la validación de los formularios y Axios para el fectching. Así mismo, cuenta con una api creada con Strapi, 
+Formik para la validación de los formularios y Axios para el fetching. Así mismo, cuenta con una api creada con Strapi, 
 una aplicación que nos permite gestionar y configurar una APi.
 
 <p>Las funcionalidades del proyecto pueden verse al momento de registrarse en la página, ingresar, cargar productos; buscarlos a traves del filtro de búsqueda; 
